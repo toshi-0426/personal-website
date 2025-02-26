@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+.easy-btn {
+  padding: 8px 16px;
+  background-color: #4672f7;
+  color: white;
+  border-radius: 4px;
+  font: bold;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.easy-btn:hover {
+  background-color: #386ad6;
+}
+
+.btn {
+  @apply font-semibold py-2 px-4 rounded ml-10 cursor-pointer
+}
+
+.btn-blue {
+  @apply bg-blue-500 hover:bg-blue-600  text-white 
+}
+
+.btn-blue:hover {
+  @apply bg-blue-600
+}
