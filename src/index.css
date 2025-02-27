@@ -10,6 +10,7 @@
     --breakpoint-3xl: 1920px;
     --color-body: #dfeedf;
     --color-selected-text: #a3a3ff;
+    --color-gray: #d9d9d9;
     
     --color-avocado-100: oklch(0.99 0 0);
     --color-avocado-200: oklch(0.98 0.04 113.22);
