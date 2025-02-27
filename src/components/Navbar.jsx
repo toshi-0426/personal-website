@@ -1,5 +1,7 @@
 import React from 'react'
-import { Link } from 'react-scroll';
+import './Navbar.css'
+import { Link } from 'react-scroll'
+import { Menu } from '@mui/icons-material'
 
 
 const navLinks = [
@@ -13,21 +15,26 @@ const navLinks = [
 
 const Navbar = () => {
   return (
-    <nav className='flext justify-center justify-items-center border-b'>
-        <ul className='flex p-4 gap-20 border'>
+    <nav className='border-b bg-transparent py-4'>
+      <div className='container mx-auto flex'>
+        <ul className='justify-around items-center border px-20 md:px-36 lg:px-60 xl:px-96 w-full space-x-8 hidden md:flex'>
             {navLinks.map((navLink, index) => (
                 <li key={index}>
                     <Link 
                         to={navLink.to} 
                         smooth={true} 
                         duration={500}
-                        className='text-2xl font-bold cursor-pointer border'
+                        className='font-poppins font-medium text-xl cursor-pointer border hover:text-selected-text transition-all duration-200'
                     >
                         {navLink.name}
                     </Link>
                 </li>   
             ))}
         </ul>
+        <div className='md:hidden flex items-center justify-end'>
+          <Menu />
+        </div>
+      </div>
     </nav>
   )
 }
