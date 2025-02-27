@@ -5,6 +5,7 @@
 
 @theme {
     --font-poppins: "Poppins", "serif";
+    --font-lb: "Libre Baskerville", "serif";
    
     --breakpoint-3xl: 1920px;
     --color-body: #dfeedf;
