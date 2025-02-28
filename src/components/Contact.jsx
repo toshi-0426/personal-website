@@ -18,7 +18,7 @@ const Contact = () => {
             className='rounded cursor-pointer p-2 flex items-center hover:bg-white'
           >
             <LinkedIn sx={{ fontSize: 40 }}/> 
-            <span className='text-2xl ml-2'>LinkedIn</span>
+            <span className='font-poppins text-2xl font-semibold ml-2'>LinkedIn</span>
           </a>
           <a
             href='https://github.com/toshi-0426/'
@@ -27,14 +27,14 @@ const Contact = () => {
             className='rounded cursor-pointer p-2 flex items-center hover:bg-white'
           >
             <GitHub sx={{ fontSize: 40 }}/>
-            <span className='text-2xl ml-2'>GitHub</span> 
+            <span className='font-poppins text-2xl font-semibold ml-2'>GitHub</span> 
           </a>
           <a
             href="mailto:toshiyasutakahashi5@gmail.com"
             className='rounded cursor-pointer p-2 flex items-center hover:bg-white'
           >
             <Email sx={{ fontSize: 40 }}/>
-            <span className='text-2xl ml-2'>Email</span>  
+            <span className='font-poppins text-2xl font-semibold ml-2'>Email</span>  
           </a>
         </div>
       </Element>
