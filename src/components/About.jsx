@@ -24,7 +24,7 @@ const About = () => {
               <p className='text-left  font-lb text-lg md:text-3xl mt-8 md:ml-10 lg:mt-0'>
                 I'm computer science student at University of Victoria (UVIC). 
                 I'm interested in software engineering and solving problems.
-                Currently looking for a summer internship oppotunity in 2025.          
+                Currently looking for a summer internship opportunity in 2025.          
               </p>
             </div>
           </div>
