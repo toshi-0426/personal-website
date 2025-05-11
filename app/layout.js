@@ -1,7 +1,7 @@
 import "./globals.css";
 import Header from '@/components/header'
 import { roboto } from './fonts'
-import Chatbot from "@/components/chatbot";
+//import Chatbot from "@/components/chatbot";
 import { Providers as ThemeProviders} from "./providers";
 
 export const metadata = {
@@ -26,7 +26,7 @@ export default  function RootLayout({ children }) {
           {children}
           </main>
         </ThemeProviders>
-        <Chatbot />
+        {/*<Chatbot />*/}
       </body>
     </html>
   );

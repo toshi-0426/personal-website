@@ -12,7 +12,7 @@ export default async function BlogPostsPage({ searchParams }){
   const tags = searchparams.tags?.split(',')
   const order = searchparams.order ?? 'newest'
   const page = searchparams.page ?? 1
-  const limit = searchparams.limit ?? 6
+  const limit = searchparams.limit ?? 4
   
   const { posts, pageCount } = await getPosts({
     tags,
@@ -39,7 +39,7 @@ export default async function BlogPostsPage({ searchParams }){
 
       <ul className='grid grid-cols-1 md:grid-cols-2 gap-8'>
         {posts.map(post => (
-            <li key={post.slug}>
+            <li key={post.slug} className='pl-3'>
                 <Link href={`/blog/${post.slug}`}
                     className="text-2xl text-gray-800 dark:text-gray-200" >
                     {post.frontmatter.title}

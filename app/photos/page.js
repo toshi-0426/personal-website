@@ -3,6 +3,7 @@ import H1 from "@/components/h1";
 import { photos } from "../data/photos";
 
 
+
 export const metadata = {
     title: "Photos"
   };
