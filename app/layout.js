@@ -3,6 +3,8 @@ import Header from '@/components/header'
 import { roboto } from './fonts'
 //import Chatbot from "@/components/chatbot";
 import { Providers as ThemeProviders} from "./providers";
+import { Analytics } from '@vercel/analytics/next';
+
 
 export const metadata = {
   title: {
@@ -24,6 +26,7 @@ export default  function RootLayout({ children }) {
           <Header/>
           <main className="mt-12">
           {children}
+          <Analytics />
           </main>
         </ThemeProviders>
         {/*<Chatbot />*/}
