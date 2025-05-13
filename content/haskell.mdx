@@ -1,0 +1,63 @@
+---
+title: "Haskell #1"
+description: Haskell
+date: "2025-01-19"
+tags:
+  - haskell
+  - functiaonPL
+---
+
+# Haskell \#1
+
+Haskell is a pure functional programming language.  
+In school class, I learned Haskell for the first time and I was amazed at how easy it is to write quicksort in just a few lines
+using list comprehensions.
+
+Here the example of quicksort
+
+```Haskell
+qsort :: [Int] -> [Int]
+qsort [] = []
+qsort (x:xs) =
+    qsort [y | y <- xs, x <= y]
+    ++ [x]
+    ++ qsort [y | y <-xs, x < y]
+```
+
+This function recursively sort a list of integers in ascending order.
+
+```haskell
+qsort :: [Int] -> [Int]
+-- takes a list of integers
+-- and returns a new list of integers
+```
+
+```haskell
+qsort [] = []
+-- an empty list is already sorted, so return it
+```
+
+```haskell
+qsort (x:xs) = …
+-- if a list is not empty
+-- use pattern matching to split the list into its head x (the pivot) and tail xs.
+```
+
+```haskell
+qsort [y | y <- xs, y <= x]
+-- a list comprehension that collects all elements y from xs that are ≤ the pivot x.
+-- call qsort recursively
+```
+
+```haskell
+x
+-- place the pivot x between lower and upper partitions
+```
+
+```haskell
+qsort [y | y <- xs, y > x]
+-- a list comprehension that collects all elements y from xs that are > the pivot x.
+-- call qsort recursively
+```
+
+Putting it all together, we sort the “lower” partition, then the pivot, then the “upper” partition, concatenating them with ++

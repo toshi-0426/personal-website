@@ -11,7 +11,7 @@ export const metadata = {
     template: '%s | Toshiyasu Takahashi',
     default: 'Toshiyasu Takahashi',
   },
-  description: "Toshiyasu Takahashi Portfolio",
+  description: "Toshiyasu Takahashi Personal Website",
   icons: {
     icon: './icons/icon.svg',
     apple: './icons/icon.svg',
@@ -21,7 +21,7 @@ export const metadata = {
 export default  function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body suppressHydrationWarning className={roboto.className}>
+      <body suppressHydrationWarning className={`${roboto.className} mb-10`}>
         <ThemeProviders>
           <Header/>
           <main className="mt-12">
