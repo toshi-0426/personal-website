@@ -2,7 +2,7 @@
   "compilerOptions": {
     "paths": {
       "@/*": ["./*"],
-      "@images/*": ["public/images/*"],
+      "@images/*": ["public/images/*"]
     }
   }
 }

@@ -1,15 +1,15 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @plugin "@tailwindcss/typography";
 @custom-variant dark (&:where(.dark, .dark *));
 
 body {
-  @apply bg-white text-gray-700 container mx-auto dark:bg-gray-900 dark:text-gray-300 max-w-2xl md:max-w-3xl
+  @apply bg-white text-gray-700 container mx-auto dark:bg-gray-900 dark:text-gray-300 max-w-2xl md:max-w-3xl;
 }
 
 hr {
-  @apply my-8 border-gray-200 dark:border-gray-800
+  @apply my-8 border-gray-200 dark:border-gray-800;
 }
 
 p {
-  @apply text-lg
+  @apply text-lg;
 }

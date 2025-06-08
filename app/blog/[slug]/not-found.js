@@ -1,19 +1,20 @@
-import Link from 'next/link'
- 
+import Link from 'next/link';
+
 export default function NotFound() {
   return (
     <div>
-      <h1 className='text-2xl'>404</h1>
+      <h1 className="text-2xl">404</h1>
       <div>Blog post was not found</div>
-      <div className='mt-4'>
+      <div className="mt-4">
         <div>You might want to check some blog posts</div>
         <ul>
-            <li>First</li>
-            <li>Second</li>
+          <li>First</li>
+          <li>Second</li>
         </ul>
-        <Link href="/" className='border p-1'>Return Home</Link>
+        <Link href="/" className="border p-1">
+          Return Home
+        </Link>
       </div>
-      
     </div>
-  )
+  );
 }

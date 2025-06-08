@@ -1,4 +1,4 @@
-export default function AboutLayout({children}) {
+export default function AboutLayout({ children }) {
   return (
     <div>
       <div>{children}</div>
@@ -10,8 +10,7 @@ export default function AboutLayout({children}) {
           <li>First Blog Post</li>
           <li>Second Blog Post</li>
         </ul>
-
       </div>
     </div>
-  )
+  );
 }
