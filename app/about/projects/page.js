@@ -12,7 +12,9 @@ export default async function ProjectPage() {
   return (
     <div>
       <H1>Projects</H1>
-      <div className="mb-8 text-lg">Hello, this is the list of my repos!</div>
+      <div className="mb-8 text-lg">
+        Hello, this is the list of my projects!
+      </div>
       <ErrorBoundary fallback={<div>Cannot fetch projects currently.</div>}>
         <Suspense fallback={<ProjectListLoading />}>
           <ProjectList />
