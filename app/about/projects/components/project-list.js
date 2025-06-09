@@ -11,7 +11,7 @@ export default async function ProjectList() {
       {projects.map((project) => (
         <li key={project.slug} className="mb-4">
           <Link href={`/about/projects/${project.slug}`}>
-            <Card className="font-mono h-full">
+            <Card className="font-mono h-80 rounded-lg">
               <div className="font-semibold mb-4 text-center">
                 {project.title}
               </div>
@@ -20,7 +20,7 @@ export default async function ProjectList() {
                   fill
                   src={project.thumbnailPath}
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-contain w-[90%] h-[90%]"
+                  className="object-contain w-80 h-80"
                   alt={project.title}
                 />
               </div>

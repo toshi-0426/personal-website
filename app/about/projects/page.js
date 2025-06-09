@@ -15,11 +15,14 @@ export default async function ProjectPage() {
       <div className="mb-8 text-lg">
         Hello, this is the list of my projects!
       </div>
+      <ProjectList />
+      {/* 
       <ErrorBoundary fallback={<div>Cannot fetch projects currently.</div>}>
         <Suspense fallback={<ProjectListLoading />}>
           <ProjectList />
         </Suspense>
       </ErrorBoundary>
+      */}
     </div>
   );
 }

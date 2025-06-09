@@ -1,0 +1,39 @@
+{
+  "lastUpdated": "2025-06-15",
+  "projects": [
+    {
+      "slug": "8-puzzle",
+      "title": "8-puzzle",
+      "description": "8-puzzle is a 3x3 sliding-tile puzzle game with a built-in solver that uses BFS, greedy best-first search, and the A* algorithm.",
+      "techStack": ["React", "TypeScript", "Tailwind CSS"],
+      "demoURL": "https://8-puzzle-lac.vercel.app/",
+      "githubURL": "https://github.com/toshi-0426/8-puzzle",
+      "thumbnailPath": "/images/projects/8-puzzle.png"
+    },
+    {
+      "slug": "finance-tracker",
+      "title": "Finance Tracker",
+      "description": "Finance Tracker is a finance tracking app that help you to effortlessly monitor your spending.",
+      "techStack": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Supabase",
+        "PostgreSQL",
+        "Tailwind CSS"
+      ],
+      "demoURL": "https://finance-tracker-app-2025.vercel.app/",
+      "githubURL": "https://github.com/toshi-0426/finance-tracking-app",
+      "thumbnailPath": "/images/projects/finance-tracker.png"
+    },
+    {
+      "slug": "grocery-store-checkout-simulation",
+      "title": "Grocery store checkout simulation",
+      "description": "A discrete-event simulation written in Python that investigates the trade-offs between traditional cashier-operated lanes and self-service checkouts in a grocery store.",
+      "techStack": ["Python"],
+      "demoURL": null,
+      "githubURL": "https://github.com/toshi-0426/grocery-store-checkout-simulation",
+      "thumbnailPath": "/images/projects/grocery-store-checkout-simulation.png"
+    }
+  ]
+}
