@@ -3,6 +3,7 @@ import H1 from '@/components/h1';
 import data from '@/data/projects.json';
 import Badge from '../components/badge';
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
 
 export async function generateStaticParams() {
   const projects = data.projects;
@@ -38,7 +39,7 @@ export default async function ProjectPage({ params }) {
             </a>
           </li>
         )}
-        <li className="flex items-center text-sm">
+        <li className="flex items-center text-sm mb-10">
           <Badge>SOURCE CODE</Badge>
           &nbsp;&nbsp;
           <a href={`${githubURL}`} target="_blank" rel="noopener noreferrer">
@@ -46,8 +47,14 @@ export default async function ProjectPage({ params }) {
           </a>
         </li>
       </ul>
-      <div>
-        
+      <div className='flex justify-center overflow-hidden'>
+        <Image 
+          src={thumbnailPath}
+          width={400}
+          height={400}
+          className='object-cover'
+          alt={`${title}`}
+        />
       </div>
     </div>
   );
