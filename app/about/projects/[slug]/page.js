@@ -12,6 +12,17 @@ export async function generateStaticParams() {
   }));
 }
 
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const project = data.projects.find((project) => project.slug === slug);
+  if (!project) {
+    notFound();
+  }
+  return {
+    title: project.title,
+  };
+}
+
 export default async function ProjectPage({ params }) {
   const { slug } = await params;
   const project = data.projects.find((project) => project.slug === slug);
@@ -47,12 +58,12 @@ export default async function ProjectPage({ params }) {
           </a>
         </li>
       </ul>
-      <div className='flex justify-center overflow-hidden'>
-        <Image 
+      <div className="flex justify-center overflow-hidden">
+        <Image
           src={thumbnailPath}
           width={400}
           height={400}
-          className='object-cover'
+          className="object-cover"
           alt={`${title}`}
         />
       </div>
