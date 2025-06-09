@@ -13,7 +13,7 @@
     {
       "slug": "finance-tracker",
       "title": "Finance Tracker",
-      "description": "Finance Tracker is a finance tracking app that help you to effortlessly monitor your spending.",
+      "description": "Finance Tracker is a modern, password-free finance app with Magic-Link authentication. Effortlessly monitor your spending—add, edit, and delete transactions—and customize your dashboard with a default date range, display name, and avatar.",
       "techStack": [
         "Next.js",
         "React",
