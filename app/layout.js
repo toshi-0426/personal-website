@@ -12,8 +12,8 @@ export const metadata = {
   },
   description: 'Toshiyasu Takahashi Personal Website',
   icons: {
-    icon: './icons/icon.svg',
-    apple: './icons/icon.svg',
+    icon: '/icons/icon.svg',
+    apple: '/icons/icon.svg',
   },
 };
 
