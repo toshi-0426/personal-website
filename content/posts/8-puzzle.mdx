@@ -1,0 +1,78 @@
+---
+title: 'Built 8-puzzle solver'
+description: 8-puzzle
+date: '2025-06-05'
+tags:
+  - react
+  - typescript
+  - tailwindcss
+  - algorithm
+  - bfs
+  - a\*
+---
+
+# 8-puzzle solver
+
+I recently built an interactive 8-puzzle game with three different solver strategies:
+
+- **BFS** (Breadth-First Search)
+- **Greedy Best-First Search**
+- **A\* Search**
+
+To get started, I followed two excellent walkthroughs:
+
+- <div className="flex">
+    <a
+      href="https://www.youtube.com/watch?v=GuCzYxHa7iA&t=68s"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Solving 8 puzzle with A* search
+    </a>
+    &nbsp;by Jinyue Han
+  </div>
+- <div className="">
+    <a
+      href="https://www.youtube.com/watch?v=GuCzYxHa7iA&t=68s"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Solution to 8 Puzzle problems using the Best First Search (BFS) Algorithm
+      in Artificial Intelligence
+    </a>
+    &nbsp;by Mahesh Huddar
+  </div>
+
+### Solver Performance Comparison
+
+Test case: [5, 7, 6, 2, 3, 1, 8, 4, 0] → [1, 2, 3, 4, 5, 6, 7, 8, 0]
+
+<div className="grid border grid-cols-3 text-center">
+  <span className="font-semibold border-b">Algorithm</span>
+  <span className="font-semibold border-b border-r border-l">Moves</span>
+  <span className="font-semibold border-b">Execution Time (sec)</span>
+  <span className="">BFS</span>
+  <span className="border-r border-l">26</span>
+  <span className="">2.827</span>
+  <span className="">Greedy</span>
+  <span className="border-r border-l">38</span>
+  <span className="">0.001</span>
+  <span className="">A*</span>
+  <span className="border-r border-l">26</span>
+  <span className="">0.821</span>
+</div>
+
+- BFS can find the optimal solution, but takes much time.
+- Greedy approach takes way less execution time, but cannot find the optimal answer.
+- A\* algorithm can effectively find good solutions with reasonable performance.
+
+<div>
+  If you want to see source code, here's the Github link:
+  <a
+    href="https://github.com/toshi-0426/8-puzzle"
+    target="\_blank"
+    rel="noopener noreferrer"
+  >
+    https://github.com/toshi-0426/8-puzzle
+  </a>
+</div>

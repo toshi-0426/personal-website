@@ -11,9 +11,9 @@
       "thumbnailPath": "/images/projects/8-puzzle.png"
     },
     {
-      "slug": "finance-tracker",
-      "title": "Finance Tracker",
-      "description": "Finance Tracker is a modern, password-free finance app with Magic-Link authentication. Effortlessly monitor your spending—add, edit, and delete transactions—and customize your dashboard with a default date range, display name, and avatar.",
+      "slug": "financail-tracker",
+      "title": "Financial Tracker",
+      "description": "Financial Tracker is a modern, password-free finance app with Magic-Link authentication. Effortlessly monitor your spending—add, edit, and delete transactions—and customize your dashboard with a default date range, display name, and avatar.",
       "techStack": [
         "Next.js",
         "React",
