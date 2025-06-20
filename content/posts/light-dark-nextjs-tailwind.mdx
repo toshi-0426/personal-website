@@ -1,0 +1,22 @@
+---
+title: 'Implementing Light/Dark Mode in Next.js + Tailwind CSS'
+description: How to do light/dark mode in your next.js app with tailwind CSS
+date: '2025-04-20'
+tags:
+  - next.js
+  - tailwindcss
+---
+
+# Light/Dark Mode in Next.js + Tailwind CSS
+
+I often refer to this article when implementing light/dark mode in Next.js with Tailwind CSS.
+Here’s the link:
+[https://www.davegray.codes/posts/light-dark-mode-nextjs-app-router-tailwind](https://www.davegray.codes/posts/light-dark-mode-nextjs-app-router-tailwind)
+
+**Note on Tailwind v4+**  
+That guide assumes you have a `tailwind.config.js` file by default. Since Tailwind CSS v4, however, no config is generated unless you explicitly create one.<br/>
+So you need to write<br />
+`@custom-variant dark (&:where(.dark,.dark *));` to the globals.css file.<br/>
+For detail, see [https://tailwindcss.com/docs/dark-mode](https://tailwindcss.com/docs/dark-mode)
+
+Once that’s set up, just follow the rest of the steps in the article and you’ll be good to go.
