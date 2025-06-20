@@ -10,4 +10,40 @@ tags:
   - webdev
 ---
 
-## Quick Review of UDP/TCP
+# Quick Review of UDP/TCP
+
+The following content is a review of TCP and UDP for my own learning purposes.
+
+### Overview of Transport Layer
+
+The Transport Layer plays the crucial role in providing reliable, end-to-end communication between devices on a network.
+Its primary functions include ensuring complete data transfer, error recovery, and managing flow control.
+
+### What are UDP and TCP?
+
+UDP and TCP are both protocols in the Transport layer.
+
+- <strong>TCP (Transmission Control Protocol)</strong>
+  <ul>
+    <li>
+      Connection-oriented
+      <br /> before communications, TCP connection needs to be built between the
+      two hosts
+    </li>
+    <li>Reliable transport</li>
+    <li>Slower than UDP</li>
+    <li>Full duplex</li>
+    <li>Flow Control</li>
+    <li>Congestion Control</li>
+  </ul>
+- <strong>UDP (User Datagram Protocol)</strong>
+  <ul>
+    <li>Connectionless</li>
+    <li>Can be unreliable</li>
+    <li>No flow control in TCP's way</li>
+    <li>Very fast</li>
+    <li>
+      No guarantees
+      <br /> packets can be lost, out of order, or ignored
+    </li>
+  </ul>
