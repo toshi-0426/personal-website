@@ -25,6 +25,10 @@ export default async function BlogPostsPage({ searchParams }) {
     <>
       <H1>Recent Posts</H1>
 
+      <div className="text-lg text-gray-600 dark:text-gray-400">
+        These blog posts are for learning purposes
+      </div>
+
       <div className="text-lg text-gray-600 dark:text-gray-400 mb-8">
         Stay up to date with most recent posts
       </div>
