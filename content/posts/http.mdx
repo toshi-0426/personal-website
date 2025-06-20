@@ -1,0 +1,41 @@
+---
+title: 'Quick Review of HTTP'
+description: Quick Review of HTTP
+date: '2025-06-19'
+tags:
+  - http
+  - network
+  - webdev
+---
+
+# Quick Review of HTTP
+
+Having studied computer networking at school last year,
+I realized how much I’d forgotten.
+As I begin my journey with Express.js for backend development,
+I find it helpful to review HTTP fundamentals so I fully understand how it works under the hood.
+
+### What is HTTP?
+
+HTTP is a protocol in the application layer that is desined to transfer HTML document basically and also other kind of data such as images, videos, JSON, etc.
+Since it requires reliable data delivary, it always runs on top of TCP — which I may cover in more detail in a future blog post.
+
+### HTTP Messages
+
+There are two types of HTTP messages:
+
+- **_Request_** : sent from the client to the server including an HTTP method (e.g. GET, POST), a URL, headers, and optionally a body.
+- **_Response_** : sent from the server back to the client including a status code (e.g. 200, 404), headers, and optionally a body.
+
+### Two Key Characteristics of HTTP
+
+- **_Connection Behavior_** <br/>
+  HTTP itself is connectionless because without TCP connection, two distince Application layer cannot communicate each other.
+  it works together with TCP as I mention earlier and TCP connection can be used for long time period.
+  This is called <strong>persistent connection</strong>. <br/>
+  For HTTP/1.0, persistant connections are optional. <br/>
+  For HTTP/1.1, persistant connections are the defualt. <br/>
+  With HTTP/2.0, in addition to persistent connections, efficiency and performance are further improved through features like multiplexing, header compression, and server push.<br/>
+- **_Statelessness_** <br />
+  HTTP is stateless, meaning every request is independent. <br/>
+  The server has no memory of previous interactions — each request must include all necessary information.
